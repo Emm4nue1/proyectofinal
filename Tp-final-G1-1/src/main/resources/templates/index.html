@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://thymeleaf.org">
+<head th:insert="/layouts/head::head">
+<meta charset="UTF-8">
+</head>
+
+<body class="bg-dark">
+	<header th:insert="/layouts/header::header"> </header>
+	<div class="container-fluid align-content-center">
+		<h1 class="display-1 text-white text-center">¿BUSCAS TRABAJO EN
+			ARGENTINA?</h1>
+		<h1 class="display-4 text-primary text-center">Registrate y
+			aplica a los empleos desde hoy de manera facil, rapida y gratis</h1>
+		<h1 class="display-5 text-white text-center">NUEVAS OFERTAS CADA
+			DIA</h1>
+		<p></p>
+
+	<div class="container">
+    <div class="row justify-content-around">
+
+ 
+		<div class="card" th:href="@{/inicio/ciudadanos}" style="width: 24rem;">
+   <img src="https://www.dbtechnologies.com/public/CMS/Files/3211/icone%20account.png" class="card-img-top" alt="...">
+  <div class="card-body" >
+    <p class="card-text text-center display-6">CIUDADANAS/OS</p>
+  </div>
+   </div>
+   
+   		<div class="card" style="width: 24rem;">
+   <img src="https://icones.pro/wp-content/uploads/2021/07/icone-d-affaires-et-d-entrepreneurs-jaune.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text text-center display-6">EMPLEADORAS/ES</p>
+  </div>
+   </div>
+   
+<!--    		<div class="card" style="width: 24rem;">
+   <img src="https://i.pinimg.com/originals/5a/ae/42/5aae42bcf3a15d54e949d1b059e7c5b9.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text text-center display-6">EMPLEADORES NUEVOS</p>
+  </div> -->
+
+</div>
+   </div>
+   <p>
+		<div class="text-center">
+			<img alt="imagen1"
+				src="https://portalempleo.gob.ar/images/cuts/portal-empleo-home-01-banner-principal-A.jpg"
+				width="1280 px">
+		</div>
+		<footer th:insert="/layouts/footer::footer"> </footer>
+	</div>
+</body>
+</html>
